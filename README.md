@@ -21,7 +21,8 @@ The app also provides a voting function, which provides democracy, convenience a
 1.Calculating mutual time & show in Colorful visual blocks
 Using apps above, finding a common time for a friend gathering often involves everyone checking or comparing their schedules, which can be cumbersome
 However, our app can calculate the free time of group event for you, and show in colored blocks, easy to use and check
-***
+
+
 ![image](https://github.com/user-attachments/assets/0736feb9-7b43-4696-ba93-3d1bf6d66fff)
 ***
 
@@ -34,7 +35,8 @@ Specific dates and time periods that the user does not want to occupy
 Users can select multiple preferred time slots
 
 Each participant time slots will be considered equally
-***
+
+
 ![image](https://github.com/user-attachments/assets/d9a7e55b-7fa1-413b-8e47-62f3ef1de2e3)
 ![image](https://github.com/user-attachments/assets/6becde13-b501-42bf-a1b8-aa0ddee036f2)
 ***
@@ -44,13 +46,15 @@ After all users have selected their preferred time slots, we will combine each p
 The status of group event will turn to ONGOING, which means we can start to vote
 putting suggested times to a vote among participants before finalizing the event also adds a democratic approach to scheduling
 Each participant can choose multiple time slots, the application will calculate the time slots with most votes and determine the final group event time
-***
+
+
 ![image](https://github.com/user-attachments/assets/055fb97f-dc91-45bb-9a85-fd06ff3e564f)
 ***
 
 4.Add group event to your personal schedule automatically
 After voting, the status of group event will turn to COMPLETED, and will automatically add into the personal schedule of every participant
-***
+
+
 ![Uploading image.png…]()
 
 
