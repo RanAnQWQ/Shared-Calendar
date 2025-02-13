@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0b5ea0e0-de9c-4f8c-986d-351be6859d6f)![image](https://github.com/user-attachments/assets/5eeda554-cbe9-438c-b0f4-08fb315b2f0b)![image](https://github.com/user-attachments/assets/beb7caac-f035-4a66-aba9-5dd2eadf9839)![image](https://github.com/user-attachments/assets/4fb4c1c0-4cae-4be3-9fe1-74b07f22564c)![image](https://github.com/user-attachments/assets/9f2de6e0-4a79-4aec-a93b-873714e8957c)![image](https://github.com/user-attachments/assets/8c6c936f-82b8-40cf-b3d9-37eff15f06ef)Android project work completed independently, based on an open source project improvement (https://gitee.com/cnctema/EaseCalendar-Weekly-view.git)
+Android project work completed independently, based on an open source project improvement (https://gitee.com/cnctema/EaseCalendar-Weekly-view.git)
 
 Shared Free Moments is an innovative smart calendar app designed to cater to the scheduling needs of diverse groups, including families, friends, couples and teams. 
 
