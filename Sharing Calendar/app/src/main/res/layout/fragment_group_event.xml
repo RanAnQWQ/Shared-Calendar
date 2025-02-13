@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 标题或任何其他内容，您可以自定义 -->
+    <TextView
+        android:id="@+id/group_event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Events"
+        android:textSize="18sp"
+        android:textColor="@color/dark_text_color"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- 群体事件的 ListView -->
+    <ListView
+        android:id="@+id/event_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="8dp"
+        android:scrollingCache="false"/>
+
+    <!-- 选择朋友的按钮 -->
+    <Button
+        android:id="@+id/select_friend_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Friends"
+        android:background="@drawable/login_et_bg"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

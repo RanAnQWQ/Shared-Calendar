@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/pf_linear_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <!-- Existing fields like title, description, etc. -->
+
+        <!-- Title Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_size_max"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin"
+            android:paddingVertical="@dimen/half_margin">
+            <ImageView
+                android:id="@+id/btn_title"
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_event_title_usual" />
+
+            <EditText
+                android:id="@+id/ed_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin"
+                android:autofillHints="@string/event_title"
+                android:background="@null"
+                android:hint="@string/event_title"
+                android:inputType="text"
+                android:maxLength="60"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/subtitle_text_size" />
+        </LinearLayout>
+
+        <!-- Description Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/icon_size_max"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin"
+            android:paddingVertical="@dimen/half_margin">
+            <ImageView
+                android:id="@+id/btn_des"
+                android:layout_width="@dimen/icon_size_small"
+                android:layout_height="@dimen/icon_size_small"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_event_description" />
+            <EditText
+                android:id="@+id/ed_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin"
+                android:background="@null"
+                android:hint="@string/event_description"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:textSize="@dimen/subtitle_text_size" />
+        </LinearLayout>
+
+        <!-- Existing Date Field for Start & End Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/icon_size_max"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/margin"
+            android:paddingVertical="@dimen/half_margin"
+            android:showDividers="middle">
+            <LinearLayout
+                android:id="@+id/date_st_holder"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_st_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/group_event_st_title"
+                    android:textSize="@dimen/body_text_size" />
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/subtitle_text_size"
+                    tools:text="2019年11月10日" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginEnd="@dimen/half_margin"
+                android:background="@color/pf_view_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/date_end_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_end_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="@string/group_event_end_title"
+                    android:textSize="@dimen/body_text_size" />
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/subtitle_text_size"
+                    tools:text="2020年12月10日" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Add Friends List Container (using RecyclerView) -->
+        <LinearLayout
+            android:id="@+id/friends_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Title for Friends List -->
+            <TextView
+                android:id="@+id/selected_friends_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Friends"
+                android:textSize="@dimen/body_text_size"
+                android:textColor="@color/dark_text_color"
+                android:layout_marginBottom="8dp" />
+
+            <!-- RecyclerView for displaying friends dynamically -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/friends_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Create Event Button -->
+        <Button
+            android:id="@+id/create_event_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_margin="@dimen/margin"
+            android:layout_marginTop="300dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

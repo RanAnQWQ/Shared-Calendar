@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_resetCalendarView_classTableOnly"
+        android:title="lookEvent"
+        android:visible="false"/>
+    <item
+        android:id="@+id/main_add_event"
+        android:icon="@drawable/ic_plus"
+        app:showAsAction="always"
+        android:title="addNewEvent" />
+   <!-- <item android:title="更换视图"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/main_resetCalendarView_dayly"
+                android:title="日视图" />
+            <item
+                android:id="@+id/main_resetCalendarView_weekly"
+                android:title="周视图" />
+            <item
+                android:id="@+id/main_resetCalendarView_nDay"
+                android:title="自定义天数" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/main_about"
+        android:title="@string/about"
+        app:showAsAction="never"/>-->
+</menu>

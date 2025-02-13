@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="weekly_view_one_minute_height">1dp</dimen>
+    <dimen name="weekly_view_row_height">60dp</dimen>
+    <dimen name="weekly_view_day_letters_height">40dp</dimen>
+    <dimen name="weekly_view_events_height">1440dp
+    </dimen>      <!-- weekly_view_row_height * 24 hours -->
+    <dimen name="weekly_view_minimal_event_height">20dp</dimen>
+
+    <!--  间距  -->
+    <dimen name="half_margin">8dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="double_margin">32dp</dimen>
+    <dimen name="triple_margin">48dp</dimen>
+
+    <!--  图标  -->
+    <dimen name="icon_size_max">64dp</dimen>
+    <dimen name="icon_size_medium">48dp</dimen>
+    <dimen name="icon_size_small">32dp</dimen>
+    <dimen name="icon_size_mini">16dp</dimen>
+
+    <!--  字体大小  -->
+    <dimen name="title_text_size">21sp</dimen>
+    <dimen name="subtitle_text_size">20sp</dimen>
+    <dimen name="body_text_size">15sp</dimen>
+    <dimen name="caption_text_size">13sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

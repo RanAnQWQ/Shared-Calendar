@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_personal_event"
+        android:icon="@drawable/ic_personal_event"
+        android:title="Personal Event" />
+    <item
+        android:id="@+id/navigation_search_other"
+        android:icon="@drawable/ic_search_other"
+        android:title="Search Other" />
+    <item
+        android:id="@+id/navigation_group_event"
+        android:icon="@drawable/ic_group_event"
+        android:title="Group Event" />
+</menu>

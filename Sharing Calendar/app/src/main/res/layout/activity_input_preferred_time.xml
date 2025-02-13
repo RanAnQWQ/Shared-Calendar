@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/selected_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Preferred Time Slots"
+        android:padding="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning (06:00-11:00)" />
+
+    <CheckBox
+        android:id="@+id/checkbox_noon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noon (11:00-13:00)" />
+
+    <CheckBox
+        android:id="@+id/checkbox_afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afternoon (13:00-18:00)" />
+
+    <CheckBox
+        android:id="@+id/checkbox_evening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evening (18:00-22:00)" />
+
+    <CheckBox
+        android:id="@+id/checkbox_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night (22:00 onwards)" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your special case period, we will not consider this period"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_choose_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start time"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/btn_choose_time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="end time"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:padding="16dp" />
+</LinearLayout>

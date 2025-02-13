@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <View
+        android:layout_width="wrap_content"
+        android:background="@color/my_light_primary"
+        android:layout_height="100dp"
+      />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@color/my_light_primary"
+        android:src="@mipmap/email4"
+
+        android:layout_height="300dp"/>
+
+<!--    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:text="Log in" />-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="26dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_et_bg"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_account_box_24"/>
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:hint="enter your name"
+                android:background="@null"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_et_bg"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_key_24"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:hint="enter your passport"
+                android:inputType="textPassword"
+                android:background="@null"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="register"
+            android:onClick="reg"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Log In "
+            android:onClick="login"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"></Button>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ListView
+        android:id="@+id/test_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
